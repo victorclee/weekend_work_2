@@ -9,6 +9,24 @@
 # constructor accordingly.
 
 class Yodel
+  
+  def initialize(complete_yodel)
+    @segment = complete_yodel[:segment]
+    @count = complete_yodel[:count]    
+  end
+
+  def segment
+    @segment
+  end
+
+  def count
+    @count
+  end
+
+  def articulate
+    @segment * @count
+  end
+
 
 end
 
